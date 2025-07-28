@@ -1,0 +1,116 @@
+body {
+    background-color: #001A6E;
+}
+
+.main-search-input {
+    background: #fff;
+    padding: 0;
+    border-radius: 1px;
+    margin-top: 200px;
+    box-shadow: 0px 0px 0px 6px rgba(255,255,255,0.3);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.fl-wrap {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+.main-search-input:before {
+    content: '';
+    position: absolute;
+    bottom: -40px;
+    width: 50px;
+    height: 1px;
+    background: rgba(255,255,255,0.41);
+    left: 50%;
+    margin-left: -25px;
+}
+
+.main-search-input-item {
+    flex: 1;
+    min-width: 200px;
+    box-sizing: border-box;
+    height: 50px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.main-search-input-item input:first-child {
+    border-radius: 100%;
+}
+
+.main-search-input-item input {
+    width: 100%;
+    height: 50px;
+    padding: 15px 25px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: none;
+}
+
+.main-search-button {
+    background: #074799;
+    height: 50px;
+    width: 120px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: width 0.3s ease;
+}
+
+.main-search-input-wrap {
+    max-width: 500px;
+    margin: 20px auto;
+    position: relative;
+}
+
+:focus {
+    outline: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    .main-search-input {
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .main-search-input-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .main-search-button {
+        width: 100%;
+    }
+}
+
+/* Modal Styling */
+.modal-content {
+    background-color: #fff; /* Warna latar belakang modal */
+    border-radius: 8px; /* Sudut melengkung */
+}
+
+.modal-header {
+    border-bottom: none; /* Menghilangkan garis bawah header modal */
+}
+
+.modal-title {
+    color: #001A6E; /* Warna judul modal */
+}
+
+.modal-body {
+    color: #333; /* Warna teks dalam modal */
+}
+
+/* Menjaga tampilan responsif */
+@media only screen and (max-width: 768px) {
+    .modal-dialog {
+        margin: 20px; /* Margin untuk modal di perangkat kecil */
+    }
+}

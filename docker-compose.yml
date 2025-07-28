@@ -1,0 +1,30 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - .:/var/www/html
+    depends_on:
+      - db
+    environment:
+      - DB_HOST=db
+      - DB_NAME=village_services
+      - DB_USER=root
+      - DB_PASS=password
+
+  db:
+    image: mysql:8.0
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_DATABASE: village_services
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./db/village_services.sql:/docker-entrypoint-initdb.d/village_services.sql
+
+volumes:
+  mysql_data: 

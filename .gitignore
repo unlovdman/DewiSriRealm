@@ -1,0 +1,33 @@
+# Dependencies
+/vendor/
+
+# Environment files
+.env
+.env.local
+.env.production
+
+# Generated files
+/temp/*.pdf
+/temp/*.doc
+/temp/*.docx
+
+# Logs
+*.log
+/logs/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Docker
+docker-compose.override.yml
+
+# Database
+*.sqlite
+*.db 

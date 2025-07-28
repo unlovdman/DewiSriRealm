@@ -1,0 +1,15 @@
+.navbar {
+    margin-bottom: 20px; /* Add space below the navbar */
+}
+
+.navbar-brand img {
+    max-height: 40px; /* Adjust logo size */
+}
+
+.navbar-nav .nav-link {
+    color: #555; /* Customize link color */
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff; /* Customize hover color */
+}
