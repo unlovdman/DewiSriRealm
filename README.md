@@ -89,9 +89,7 @@ mysql -u root -p village_services < db/village_services.sql
 
 ## 👥 Login Default
 
-### Admin
-- Username: `BONBINSURABAYA`
-- Password: `benderaseleraku123`
+
 
 ### User CSV
 - Username: Nama dari CSV (kolom 2)
